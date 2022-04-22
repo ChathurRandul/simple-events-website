@@ -8,7 +8,7 @@ import {
 
 const routes = (app) => {
   app
-    .route("/event")
+    .route("/events")
 
     .get((req, res, next) => {
       next();
@@ -18,7 +18,7 @@ const routes = (app) => {
     .post(addNewEvent);
 
   app
-    .route("/event/:eventID")
+    .route("/events/:eventID")
 
     // get a specific event
     .get(getEventByID)
